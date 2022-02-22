@@ -16,7 +16,9 @@
         </li>
       </ul>
     </div>
-    <button v-if="loader" disabled>...</button>
+    <button v-if="loader" disabled style="font-style: italic">
+      Please wait
+    </button>
     <button v-else @click="submit" :disabled="!isSubscription || error">
       Sign and send
     </button>

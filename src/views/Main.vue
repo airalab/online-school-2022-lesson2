@@ -17,7 +17,7 @@
           <Account class="block" />
           <Sender />
         </template>
-        <div v-else>...</div>
+        <div v-else>Please wait</div>
       </div>
     </section>
   </div>
