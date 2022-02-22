@@ -5,6 +5,7 @@
       <ul>
         <li v-for="(answer, k2) in item.answers" :key="k2">
           <label>
+            <b>{{ k2 }})</b>&nbsp;
             <input
               :type="item.multiple ? `checkbox` : `radio`"
               v-model="form[k]"
