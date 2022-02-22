@@ -1,0 +1,192 @@
+[
+  {
+    "question": "Why does the emergence of the robot economy look like a logical continuation of the human economy?",
+    "answers": [
+      "There will be so many robots and smart devices that they will replace humans in the economy.",
+      "New supply chains will run too fast for humans.",
+      "The transaction costs of the human economy will skyrocket.",
+      "There are already gaps in the supply chains of firms, it is necessary to transfer the management of firms to automation."
+    ],
+    "multiple": false
+  },
+  {
+    "question": "Transaction costs are a consequence of…",
+    "answers": [
+      "the rational behavior of economic agents",
+      "bounded rationality of economic agents and complexity of the world around us",
+      "the use of market mechanisms",
+      "the irrational behavior of economic agents"
+    ],
+    "multiple": false
+  },
+  {
+    "question": "How does the market affect the size of firms?",
+    "answers": [
+      "The size of firms depends on the internal costs of producing a product compared to the transaction costs of obtaining a similar product through market exchange transactions.",
+      "The higher the transaction costs, the lower the profit of the company, and as a result, the smaller its size.",
+      "The larger the market, the larger the firms represented in it.",
+      "The size of firms depends on the bounded rationality of those market participants who refuse to directly participate in the exchange and agree to participate in the work of the firm."
+    ],
+    "multiple": false
+  },
+  {
+    "question": "Why hasn't a gigantic firm manufacturing everything in the world yet appeared according to Coase?",
+    "answers": [
+      "The sum of the transaction costs of one giant firm will outweigh the profits from the production of its goods.",
+      "Competing companies just don't let that happen, that's the nature of the free market.",
+      "At some point, the costs of organizing the creation of a new product within one firm will exceed the costs of creating the same product through exchange transactions.",
+      "The antimonopoly authorities do not allow such firms to appear."
+    ],
+    "multiple": false
+  },
+  {
+    "question": "In which case will the transaction costs of the aircraft refueling firm decrease?",
+    "answers": [
+      "The firm will install video surveillance cameras on the refueling unit.",
+      "The firm will offer airlines increased rates for refueling.",
+      "The firm will replace refueling units and human operators with refueling robots.",
+      "The firm will connect a digital system for processing and tracking refueling orders."
+    ],
+    "multiple": false
+  },
+  {
+    "question": "If robofirms arise and spread everywhere, then what will people do? (multiple answers)",
+    "answers": [
+      "People will simply buy goods and services from robofirms.",
+      "People will engage in creative and intellectual activities.",
+      "People will invest in robofirms and receive dividends.",
+      "People will create handmade goods that will be highly valued.",
+      "People will technically check robofirms."
+    ],
+    "multiple": true
+  },
+  {
+    "question": "The term \"cyber-physical system\" does not have a general strict definition. Indicate the most correct meaning that reflects the main point of the concept.",
+    "answers": [
+      "CPS is a mutual integration of the physical processes with the software and networking.",
+      "CPS is a system in which many independent devices are connected.",
+      "CPS is an integration of digital devices and software into living beings.",
+      "CPS is a complex robot capable of changing the physical environment."
+    ],
+    "multiple": false
+  },
+  {
+    "question": "Which of the following is NOT an example of a cyber-physical system?",
+    "answers": [
+      "Google Maps",
+      "Smart Home",
+      "Proportional-integral-derivative (PID) controller",
+      "Smart factory"
+    ],
+    "multiple": false
+  },
+  {
+    "question": "Select the qualities that distinguish a CPS system from a conventional digital system (multiple answers):",
+    "answers": [
+      "Networked",
+      "Adaptive",
+      "Economical",
+      "Private",
+      "Real time",
+      "Secure",
+      "Communication limited",
+      "Has access to physical world",
+      "Has limited communication resources",
+      "Creative",
+      "Intelligent"
+    ],
+    "multiple": true
+  },
+  {
+    "question": "A characteristic attribute of any industrial revolution is:",
+    "answers": [
+      "Transition from an agrarian society to an industrial one",
+      "Total introduction of technologies in the most important areas of the human economy",
+      "Rapid changes in the political structure of states",
+      "The emergence of new types of goods"
+    ],
+    "multiple": false
+  },
+  {
+    "question": "What is the fundamental difference between the fourth industrial revolution and the third?",
+    "answers": [
+      "The emergence of complex robotics capable of performing tasks at a speed that is inaccessible to humans.",
+      "Uberization of industrial supply chains.",
+      "Large-scale changes in the architecture of production processes.",
+      "The emergence of large-scale and complex automatic cycles of data collection, processing and decision-making without human intervention."
+    ],
+    "multiple": false
+  },
+  {
+    "question": "What is Norbert Wiener's principle that he suggests as a guide to productive research?",
+    "answers": [
+      "The most productive research appears at the intersection of areas of the living world and technological advances.",
+      "A key factor for productive research is to be an expert in several fields of science.",
+      "To search for new and effective technologies, one should turn to examples of the living world.",
+      "The most productive research is obtained if you apply an interdisciplinary approach, and look for patterns in different areas."
+    ],
+    "multiple": false
+  },
+  {
+    "question": "What makes cryptocurrencies the first money that autonomous systems can manage?",
+    "answers": [
+      "Due to the digital nature of cryptocurrencies, the autonomous system will be protected from hacking and fraud.",
+      "Autonomous systems can store cryptocurrency in personal wallets, use to accept payments and pay bills on their own.",
+      "Transaction costs when using cryptocurrencies are much lower than when using classic banking systems",
+      "The autonomous system will be able to restore its entire list of transactions from the blockchain."
+    ],
+    "multiple": false
+  },
+  {
+    "question": "Why are the possibilities of the Bitcoin cryptocurrency in its current form not enough for the functioning of the robot economy?",
+    "answers": [
+      "The cost of conducting transactions in Bitcoin is too high for the fast and constant operation of autonomous economic agents.",
+      "Bitcoin is subject to a 51% attack probability, which makes it unsafe for autonomous economic agents.",
+      "Bitcoin transactions contain only economic information, while autonomous economic agents require programmable business logic.",
+      "Due to the high volatility of Bitcoin, the work of autonomous economic agents can be disrupted at any time."
+    ],
+    "multiple": false
+  },
+  {
+    "question": "What are the advantages of establishing contractual relationships between cyber-physical systems when they interact?",
+    "answers": [
+      "In a contractual format, the possibility of human errors can be eliminated.",
+      "In a contractual format automatic services of different companies can cooperate while maintaining the interests of companies and its security.",
+      "In a contractual format, there is no need to build standardized methods for connecting different systems of companies.",
+      "In a contractual format, machine-to-machine interaction will work much more efficiently."
+    ],
+    "multiple": false
+  },
+  {
+    "question": "Let's assume that the fee for conducting transactions in the Ethereum network is $200. In which of the following scenarios do you think the operation of the robot economy is still profitable? (multiple answers)",
+    "answers": [
+      "consistent workflow between two smart factories",
+      "collecting data from a network of civil monitoring sensors",
+      "automatic refueling of tankers",
+      "service for recording events using an automatic drone",
+      "automatic pizza delivery",
+      "coffee shop with waffle maker robot"
+    ],
+    "multiple": true
+  },
+  {
+    "question": "What is teleology?",
+    "answers": [
+      "The study of religious dogmas.",
+      "The study of human behavior, regardless of the final goal setting.",
+      "The study of the causes of the behavior of artificial intelligence.",
+      "The study of explaining the development of someone or something as a function of its final goals."
+    ],
+    "multiple": false
+  },
+  {
+    "question": "What is praxeology?",
+    "answers": [
+      "The study of the effectiveness of practical activities.",
+      "The study of the best practices in economic activity.",
+      "The study of the practical usefulness of autonomous systems.",
+      "The study of effective management."
+    ],
+    "multiple": false
+  }
+]
