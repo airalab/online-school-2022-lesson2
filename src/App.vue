@@ -3,7 +3,7 @@
     <div class="app-title">
       <div class="layout">
         <h1>
-          Try it out dapp >
+          Lesson 2 Test >
           <a href="https://robonomics.academy/" target="_blank"
             >Online Robonomics school 2022</a
           >
