@@ -12,6 +12,12 @@
             will not find answers to some questions directly in the whitepaper.
             You will need to think about them by yourself , so be careful.
           </p>
+          <p>
+            To pass the test, you need to score 10 correct answers out of 17 
+            (60%, the standard value in academic practice). Correct answers and 
+            a list of those who successfully completed the lesson will be published 
+            on the final day of the school.
+          </p>
         </div>
         <template v-if="isReady">
           <Account class="block" />
