@@ -24,9 +24,9 @@
     </button>
     <div v-if="error" class="error">{{ error }}</div>
     <div class="tip" v-if="!isSubscription">
-      You need IoT subscription for transaction fee. Ask in
-      <a :href="discord" target="_blank">Discord</a> to add your account to the
-      Learning Winter School 2022 subscription.
+      You need free IoT subscription to make a transaction. Check out
+      the academy-faucet bot on the 
+      <a :href="discord" target="_blank">Discord</a> server.
     </div>
   </section>
 </template>

@@ -5,7 +5,7 @@
         <div>
           <h1>Dear participant!</h1>
           <p>
-            You are invited to take this test for lesson 2, which is dedicated
+            You are invited to take this test for Lesson 2, which is dedicated
             to the first chapter of the Robonomics Whitepaper 2022 “At the
             Intersection of Cybernetics and Economics”. The test is designed to
             encourage you to reflect on the ideas covered in the lesson, and you
@@ -14,9 +14,7 @@
           </p>
           <p>
             To pass the test, you need to score 10 correct answers out of 17 
-            (60%, the standard value in academic practice). Correct answers and 
-            a list of those who successfully completed the lesson will be published 
-            on the final day of the school.
+            (60%, the standard value in academic practice).
           </p>
         </div>
         <template v-if="isReady">
