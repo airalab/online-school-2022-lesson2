@@ -3,7 +3,7 @@
     <div class="app-title">
       <div class="layout">
         <h1>
-          Lesson 2 Test <
+          Lesson 2 Test &lt;
           <a href="https://robonomics.academy/" target="_blank"
             >Introduction Course: Lesson 2</a
           >
@@ -105,8 +105,8 @@ body {
 }
 
 body *::selection {
-    color: var(--color-black);
-    background-color: var(--color-yellow); 
+  color: var(--color-black);
+  background-color: var(--color-yellow);
 }
 
 .app-title {
@@ -122,7 +122,8 @@ body *::selection {
   text-decoration: none;
 }
 
-.app-title, .app-title h1 {
+.app-title,
+.app-title h1 {
   font-size: 24px !important;
 }
 
@@ -185,7 +186,9 @@ h3 {
   background-color: var(--color-yellow);
 }
 
-p, ol, h4 {
+p,
+ol,
+h4 {
   margin-bottom: var(--space);
 }
 
@@ -198,7 +201,7 @@ ol {
 }
 
 a {
-  color: var(--color-blue)
+  color: var(--color-blue);
 }
 
 .animate-show-up {
