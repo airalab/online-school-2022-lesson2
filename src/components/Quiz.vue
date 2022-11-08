@@ -1,7 +1,7 @@
 <template>
   <section>
     <div v-for="(item, k) in questions" :key="k" class="answer">
-      <h2>Question {{ k + 1 }}: {{ item.question }}</h2>
+      <h2>{{ $t("quiz.question") }} {{ k + 1 }}: {{ item.question }}</h2>
       <ul>
         <li v-for="(answer, k2) in item.answers" :key="k2">
           <label>
@@ -17,36 +17,35 @@
       </ul>
     </div>
     <button v-if="loader" disabled style="font-style: italic">
-      Please wait
+      {{ $t("quiz.wait") }}
     </button>
     <button v-else @click="submit" :disabled="!isSubscription || error">
-      Sign and send
+      {{ $t("quiz.sign") }}
     </button>
     <div v-if="error" class="error">{{ error }}</div>
     <div class="tip" v-if="!isSubscription">
-      You need free IoT subscription to make a transaction. Check out
-      the academy-faucet bot on the 
-      <a :href="discord" target="_blank">Discord</a> server.
+      <i18n-t keypath="quiz.subscription.text">
+        <template #link>
+          <a :href="discord" target="_blank">
+            {{ $t("quiz.subscription.link") }}
+          </a>
+        </template>
+      </i18n-t>
     </div>
   </section>
 </template>
 
 <script>
 import robonomics from "../robonomics";
-import questions from "../questions";
+import questionsEn from "../questions.en.json";
+import questionsRu from "../questions.ru.json";
 import config from "../config";
-
-const form = {};
-for (const key in questions) {
-  form[key] = questions[key].multiple ? [] : null;
-}
 
 export default {
   props: ["loader"],
   data() {
     return {
-      questions: questions,
-      form: form,
+      form: {},
       isSubscription: false,
       discord: config.discord,
       error: false
@@ -57,13 +56,32 @@ export default {
       this.isSubscription = robonomics.accountManager.subscription;
     }, 1000);
   },
+  computed: {
+    questions() {
+      let questions = questionsEn;
+      if (this.$i18n.locale === "ru") {
+        questions = questionsRu;
+      }
+      return questions;
+    }
+  },
   watch: {
+    questions: {
+      handler() {
+        const form = {};
+        for (const key in this.questions) {
+          form[key] = this.questions[key].multiple ? [] : null;
+        }
+        this.form = form;
+      },
+      immediate: true
+    },
     form: {
       handler() {
         let error = false;
         for (const key in this.form) {
           if (this.form[key] === null || this.form[key].length === 0) {
-            error = "all questions must be answered";
+            error = this.$t("quiz.error");
             break;
           }
         }

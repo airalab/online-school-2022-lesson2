@@ -1,13 +1,18 @@
 <template>
   <div class="app">
     <div class="app-title">
-      <div class="layout">
+      <div class="layout flex">
         <h1>
-          Lesson 2 Test &lt;
-          <a href="https://robonomics.academy/" target="_blank"
-            >Introduction Course: Lesson 2</a
-          >
+          {{ $t("header.title") }} &lt;
+          <a href="https://robonomics.academy/" target="_blank">
+            {{ $t("header.link") }}
+          </a>
         </h1>
+
+        <select v-model="locale">
+          <option value="en">English</option>
+          <option value="ru">Русский</option>
+        </select>
       </div>
     </div>
     <router-view />
@@ -26,6 +31,17 @@ export default {
     await AccountManager.initPlugin(robonomics.accountManager.keyring, {
       isDevelopment: config.isDevelopmentAccounts
     });
+  },
+  data() {
+    return {
+      locale: this.$i18n.locale
+    };
+  },
+  watch: {
+    locale(newValue) {
+      this.$i18n.locale = newValue;
+      localStorage.setItem("locale", newValue);
+    }
   }
 };
 </script>
@@ -132,6 +148,17 @@ body *::selection {
   margin: 0 auto;
   padding-left: var(--space);
   padding-right: var(--space);
+}
+
+.flex {
+  display: flex;
+  justify-content: space-between;
+}
+.flex h1 {
+  flex: 0 1 auto;
+}
+.flex select {
+  flex: 0 1 auto;
 }
 
 section {

@@ -1,7 +1,9 @@
 <template>
-  <section style="margin-bottom: 0;">
-    <h3>1. Your account</h3>
-    <p><i>[Robonomics parachain format]</i></p>
+  <section style="margin-bottom: 0">
+    <h3>{{ $t("account.title") }}</h3>
+    <p>
+      <i>{{ $t("account.notice") }}</i>
+    </p>
     <section>
       <select v-if="accounts.length > 1" v-model="account">
         <option
@@ -20,15 +22,18 @@
           href="javascript:;"
           @click.prevent="clipboard(account, $event)"
         >
-          <span class="copy">Copy address</span>
-          <span class="copied">Address copied!</span>
+          <span class="copy">{{ $t("account.copy") }}</span>
+          <span class="copied">{{ $t("account.copied") }}</span>
         </a>
       </p>
       <p v-if="accounts.length === 0">
-        Create or activate your account in
-        <a href="https://polkadot.js.org/extension/" target="_blank"
-          >Polkadot.js extension</a
-        >
+        <i18n-t keypath="account.create.text">
+          <template #link>
+            <a href="https://polkadot.js.org/extension/" target="_blank">
+              {{ $t("account.create.link") }}
+            </a>
+          </template>
+        </i18n-t>
       </p>
     </section>
   </section>
