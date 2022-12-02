@@ -36,10 +36,10 @@
 </template>
 
 <script>
-import robonomics from "../robonomics";
+import config from "../config";
 import questionsEn from "../questions.en.json";
 import questionsRu from "../questions.ru.json";
-import config from "../config";
+import robonomics from "../robonomics";
 
 export default {
   props: ["loader"],
@@ -55,6 +55,7 @@ export default {
     setInterval(() => {
       this.isSubscription = robonomics.accountManager.subscription;
     }, 1000);
+    this.initForm();
   },
   computed: {
     questions() {
@@ -66,18 +67,8 @@ export default {
     }
   },
   watch: {
-    questions: {
-      handler() {
-        const form = {};
-        for (const key in this.questions) {
-          form[key] = this.questions[key].multiple ? [] : null;
-        }
-        this.form = form;
-      },
-      immediate: true
-    },
     form: {
-      handler() {
+      handler(value) {
         let error = false;
         for (const key in this.form) {
           if (this.form[key] === null || this.form[key].length === 0) {
@@ -86,12 +77,28 @@ export default {
           }
         }
         this.error = error;
+        localStorage.setItem("lesson2quiz", JSON.stringify(value));
       },
-      deep: true,
-      immediate: true
+      deep: true
     }
   },
   methods: {
+    initForm() {
+      let store = {};
+      try {
+        store = JSON.parse(localStorage.getItem("lesson2quiz")) || {};
+        // eslint-disable-next-line no-empty
+      } catch (_) {}
+      const form = {};
+      for (const key in questionsEn) {
+        if (store[key]) {
+          form[key] = store[key];
+        } else {
+          form[key] = questionsEn[key].multiple ? [] : null;
+        }
+      }
+      this.form = form;
+    },
     submit() {
       if (!this.error) {
         this.$emit("submit", this.form);

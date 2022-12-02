@@ -52,6 +52,7 @@ export default {
         );
         const resultTx = await robonomics.accountManager.signAndSend(tx);
         this.result = `${resultTx.blockNumber}-${resultTx.txIndex}`;
+        localStorage.removeItem("lesson2quiz");
       } catch (error) {
         this.error = error.message;
       }
